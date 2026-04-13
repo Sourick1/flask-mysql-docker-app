@@ -43,7 +43,7 @@ Make sure you have:
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/your-username/flask-mysql-docker-app.git
+git clone git clone https://github.com/Sourick1/flask-mysql-docker-app.git
 cd flask-mysql-docker-app
 ```
 
