@@ -59,7 +59,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Flask Messages Board updated</title>
+  <title>Flask Messages Board </title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
   <style>
@@ -300,7 +300,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
           <textarea id="content" rows="3" placeholder="What's on your mind?"></textarea>
         </div>
       </div>
-      <button type="submit">✉️ &nbsp;Send Message</button>
+      <button type="submit">✉️ &nbsp;Send Message now</button>
     </form>
   </div>
 
