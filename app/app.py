@@ -300,7 +300,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
           <textarea id="content" rows="3" placeholder="What's on your mind?"></textarea>
         </div>
       </div>
-      <button type="submit">✉️ &nbsp;Message now</button>
+      <button type="submit">✉️ &nbsp; Send Message now</button>
     </form>
   </div>
 
