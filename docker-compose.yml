@@ -21,7 +21,7 @@ services:
       start_period: 40s
 
   web:
-    build: .
+    image: flask-mysql-docker-app:latest
     container_name: flask_app
     restart: unless-stopped
     env_file: .env
