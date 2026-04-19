@@ -179,7 +179,7 @@ docker run -d \
 ---
 
 
-## 🧠 Key Learnings
+## Key Learnings
 
 * Container isolation
 * Service-to-service communication
