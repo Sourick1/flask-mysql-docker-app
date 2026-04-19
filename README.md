@@ -8,7 +8,7 @@ This project demonstrates a **two-tier architecture** using:
 * **MySQL** (Database)
 * **Docker & Docker Compose** (Containerization & Orchestration)
 
-Users can submit messages through a web interface, which are stored in MySQL and displayed dynamically.
+Users can submit message through a web interface, which are stored in MySQL and displayed dynamically.
 
 ---
 
