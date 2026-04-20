@@ -61,9 +61,14 @@ pipeline {
 
                     cp .env.example .env || true
 
-                    sudo docker compose down -v || true
-                    sudo docker pull sourick1/flask-mysql-docker-app:latest
-                    sudo docker compose up -d
+                    # CLEAN EVERYTHING
+                    docker compose down -v || true
+                    docker rm -f flask_mysql_db || true
+                    docker rm -f flask_app || true
+
+                    docker pull $DOCKER_IMAGE:$TAG
+
+                    docker compose up -d
 
                     EOF
                     """
