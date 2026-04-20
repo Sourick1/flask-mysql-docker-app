@@ -1,5 +1,7 @@
 # 🚀 Flask + MySQL Two-Tier Application with CI/CD (Docker + Jenkins + AWS)
 
+🔥 Fully automated CI/CD pipeline using Jenkins, Docker, Webhooks & AWS EC2
+
 ## 📌 Overview
 
 This project demonstrates a **complete DevOps workflow** by building and deploying a two-tier application using:
@@ -17,6 +19,8 @@ This project demonstrates a **complete DevOps workflow** by building and deployi
 ---
 
 ## 🏗️ Architecture
+
+
 Developer (GitHub Push)
 ↓
 GitHub Webhook
@@ -30,7 +34,6 @@ Deploy to EC2 (Docker Compose)
 Flask App ↔ MySQL Database
 ↓
 User
-
 
 ---
 
