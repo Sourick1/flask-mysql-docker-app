@@ -49,7 +49,7 @@ pipeline {
             steps {
                 sshagent(['ec2-ssh']) {
                     sh """
-                    ssh -o StrictHostKeyChecking=no ubuntu@65.0.108.215 << EOF
+                    ssh -o StrictHostKeyChecking=no ubuntu@43.204.216.179 << EOF
                     cd /home/ubuntu || exit
 
                     if [ ! -d "flask-mysql-docker-app" ]; then
