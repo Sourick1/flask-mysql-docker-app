@@ -1,70 +1,89 @@
-**⚠️ NOTE: This is an earlier version of the project (Docker + Jenkins based CI/CD). For the latest AWS production deployment version, please check my other repository.**
+# 🚀 Flask + MySQL Two-Tier Application with CI/CD  
+### (Docker + Jenkins + AWS)
+
+🔥 Fully automated CI/CD pipeline using Jenkins, Docker, Webhooks & AWS EC2  
 
 ---
 
-🚀 Flask + MySQL Two-Tier Application with CI/CD (Docker + Jenkins + AWS)
+## 📌 Overview
 
-🔥 Fully automated CI/CD pipeline using Jenkins, Docker, Webhooks & AWS EC2
+This project demonstrates a complete DevOps workflow by building and deploying a two-tier application using:
 
-📌 Overview This project demonstrates a complete DevOps workflow by building and deploying a two-tier application using:
+- Flask → Backend application  
+- MySQL → Database  
+- Docker & Docker Compose → Containerization  
+- Jenkins → CI/CD Pipeline  
+- GitHub Webhooks → Automation trigger  
+- AWS EC2 → Deployment  
 
-Flask → Backend application
-MySQL → Database
-Docker & Docker Compose → Containerization
-Jenkins → CI/CD Pipeline
-GitHub Webhooks → Automation trigger
-AWS EC2 → Deployment
+👉 **Fully automated pipeline:** Code Push → Build → Test → Deploy → Live Application  
 
-👉 Fully automated pipeline: Code Push → Build → Test → Deploy → Live Application
+---
 
-🏗️ Architecture
-Developer (GitHub Push) → GitHub Webhook → Jenkins → Build Docker Image → Deploy to EC2 (Docker Compose) → Flask App → MySQL Database → User
+## 🏗️ Architecture
 
-⚙️ CI/CD Workflow
-Developer pushes code to GitHub
-GitHub Webhook triggers Jenkins pipeline
-Jenkins executes:
-Checkout code
-Build Docker image
-Run tests
-Deploy containers using Docker Compose
-Application is updated automatically on EC2
+Developer (GitHub Push)  
+→ GitHub Webhook  
+→ Jenkins  
+→ Build Docker Image  
+→ Deploy to EC2 (Docker Compose)  
+→ Flask App  
+→ MySQL Database  
+→ User  
 
-🐳 Tech Stack
-Python (Flask)
-MySQL
-Docker
-Docker Compose
-Jenkins
-AWS EC2
-Git & GitHub Webhooks
+---
 
-📂 Project Setup (Local)
+## ⚙️ CI/CD Workflow
 
-Clone Repository
+1. Developer pushes code to GitHub  
+2. GitHub Webhook triggers Jenkins pipeline  
+3. Jenkins executes:  
+   - Checkout code  
+   - Build Docker image  
+   - Run tests  
+   - Deploy containers using Docker Compose  
+4. Application is updated automatically on EC2  
+
+---
+
+## 🐳 Tech Stack
+
+- Python (Flask)  
+- MySQL  
+- Docker  
+- Docker Compose  
+- Jenkins  
+- AWS EC2  
+- Git & GitHub Webhooks  
+
+---
+
+## 📂 Project Setup (Local)
+
+### Clone Repository
 git clone https://github.com/Sourick1/flask-mysql-cicd-pipeline.git
 cd flask-mysql-docker-app
 
 Setup Environment Variables
 cp .env.example .env
-
 Run Application
 docker compose up -d --build
 
 🌐 Access Application
 Local: http://localhost:5000
-EC2: http://:5000
+EC2: http://<your-ec2-ip>:5000
 
 🗄️ Database Setup
 
 If the table is not auto-created:
 
 CREATE TABLE messages (
-id INT AUTO_INCREMENT PRIMARY KEY,
-content TEXT,
-author VARCHAR(255),
-created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  content TEXT,
+  author VARCHAR(255),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
 
 🔍 Verification
 docker ps
@@ -73,7 +92,6 @@ docker logs flask_app
 💾 Data Persistence
 Docker volumes are used
 Data persists even after container restarts
-
 🔄 Jenkins Pipeline Stages
 ✅ Checkout Code
 ✅ Build Docker Image
@@ -107,8 +125,8 @@ Add Nginx reverse proxy
 Use Docker Hub for versioning
 Kubernetes deployment
 Monitoring (Prometheus + Grafana)
-
 👨‍💻 Author
 
 Sourick Chowdhury
 Aspiring DevOps Engineer
+```bash
