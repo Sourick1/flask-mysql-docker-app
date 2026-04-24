@@ -1,4 +1,5 @@
-🚀 Flask + MySQL Two-Tier Application with CI/CD (Docker + Jenkins + AWS)
+🚀 **Flask + MySQL Two-Tier Application with CI/CD (Docker + Jenkins + AWS)**
+
 🔥 Fully automated CI/CD pipeline using Jenkins, Docker, Webhooks & AWS EC2
 
 📌 Overview
@@ -10,11 +11,14 @@ Docker & Docker Compose → Containerization
 Jenkins → CI/CD Pipeline
 GitHub Webhooks → Automation trigger
 AWS EC2 → Deployment
+
+
 👉 Fully automated pipeline:
 Code Push → Build → Test → Deploy → Live Application
 
 🏗️ Architecture
-Developer (GitHub Push) ↓ GitHub Webhook ↓ Jenkins ↓ Build Docker Image ↓ Deploy to EC2 (Docker Compose) ↓ Flask App ↔ MySQL Database ↓ User
+Developer (GitHub Push)→ GitHub Webhook → Jenkins → Build Docker Image→ Deploy to EC2 (Docker Compose)→ Flask App→ MySQL Database → User
+
 
 ⚙️ CI/CD Workflow
 Developer pushes code to GitHub
@@ -25,6 +29,7 @@ Build Docker image
 Run tests
 Deploy containers using Docker Compose
 Application is updated automatically on EC2
+
 🐳 Tech Stack
 Python (Flask)
 MySQL
@@ -33,6 +38,8 @@ Docker Compose
 Jenkins
 AWS EC2
 Git & GitHub Webhooks
+
+
 📂 Project Setup (Local)
 1. Clone Repository
 git clone https://github.com/Sourick1/flask-mysql-cicd-pipeline.git
@@ -61,9 +68,11 @@ CREATE TABLE messages (
 docker ps
 docker logs flask_app
 
+
 💾 Data Persistence
 Docker volumes are used
 Data persists even after container restarts
+
 
 🔄 Jenkins Pipeline Stages
 ✅ Checkout Code
@@ -71,10 +80,12 @@ Data persists even after container restarts
 ✅ Test
 ✅ Deploy to EC2
 
+
 🔗 Webhook Integration
 GitHub Webhook triggers Jenkins automatically
 No manual build required
 Ensures real-time CI/CD
+
 
 ⚠️ Challenges Faced
 Port conflict issues (5000 already in use)
@@ -82,6 +93,7 @@ Containers not stopping properly
 Webhook not triggering (URL issues)
 Jenkins pipeline debugging
 MySQL startup delay
+
 
 🎯 Key Learnings
 End-to-end CI/CD pipeline implementation
